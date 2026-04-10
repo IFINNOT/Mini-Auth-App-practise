@@ -10,4 +10,5 @@ Flask 使用者認證練習專案，實作 Flask-Login、Session、Cookie。
 
 ## 安裝與執行
 pip install flask flask-login flask-sqlalchemy werkzeug
+
 python app.py
