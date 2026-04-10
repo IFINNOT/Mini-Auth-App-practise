@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>登入</h2>
+<form method="POST">
+  <input type="text"     name="username" placeholder="帳號" required><br>
+  <input type="password" name="password" placeholder="密碼" required><br>
+  <label>
+    <input type="checkbox" name="remember"> 記住我
+  </label><br>
+  <button type="submit">登入</button>
+</form>
+{% endblock %}

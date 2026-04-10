@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>歡迎來到 Mini Auth</h2>
+
+{% if current_user.is_authenticated %}
+  <p>你好，{{ current_user.username }}！你已經登入了。</p>
+  <a href="{{ url_for('dashboard') }}">前往 Dashboard</a>
+{% else %}
+  <p>這是一個練習用的認證系統。</p>
+  <a href="{{ url_for('register') }}">立即註冊</a> ·
+  <a href="{{ url_for('login') }}">登入</a>
+{% endif %}
+{% endblock %}
